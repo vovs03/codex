@@ -1,7 +1,5 @@
 # 1. Environment settings
 
-<!-- TOC -->autoauto- [1. Environment settings](#1-environment-settings)auto  - [Fixing Emmet plugin setting into VSCode](#fixing-emmet-plugin-setting-into-vscode)auto    - [Fixing Emmet](#fixing-emmet)auto    - [Fixing Tab commands](#fixing-tab-commands)autoauto<!-- /TOC -->
-
 - VSCode
   - Pugins:
     - Auto Close Tag
@@ -63,9 +61,15 @@
 > 3. Кликаем: `Edit in settings.json`  
 > 4. Открывается файл: `~/.config/Code/User/settings.json`  
 
-5. Добавляем строку 
+5. Добавляем строку
+
 ```json
 {
     "emmet.triggerExpansionOnTab": true
 }
 ```
+
+### Links
+
+- https://toster.ru/q/303307
+- https://coder-notes.github.io/instrument/2017/06/13/nastrojka-emmet-v-visual-studio-code.html
