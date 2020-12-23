@@ -1,0 +1,38 @@
+
+# 2020-12-23 16:20 
+-----
+
+codex [master●] % go run language/golang/weatherscan/scanner.go                                           
+# command-line-arguments
+language/golang/weatherscan/scanner.go:99:14: syntax error: unexpected <, expecting expression
+language/golang/weatherscan/scanner.go:101:13: syntax error: unexpected ], expecting { after for clause
+language/golang/weatherscan/scanner.go:102:59: syntax error: unexpected newline, expecting := or = or comma
+language/golang/weatherscan/scanner.go:103:2: syntax error: unexpected ), expecting }
+language/golang/weatherscan/scanner.go:105:1: syntax error: non-declaration statement outside function body
+codex [master●] % go run language/golang/weatherscan/scanner.go
+# command-line-arguments
+language/golang/weatherscan/scanner.go:99:14: syntax error: unexpected <, expecting expression
+language/golang/weatherscan/scanner.go:101:13: syntax error: unexpected ], expecting { after for clause
+language/golang/weatherscan/scanner.go:102:59: syntax error: unexpected ), expecting := or = or comma
+codex [master●] % go run language/golang/weatherscan/scanner.go
+2020/12/23 15:39:33 expected element type <MMWEATHER> but have <html>
+exit status 1
+codex [master●] % go run language/golang/weatherscan/scanner.go
+Time 23/12 15:00 - T max/min: -7/-8 
+Time 23/12 21:00 - T max/min: -8/-9 
+Time 24/12 03:00 - T max/min: -7/-8 
+Time 24/12 09:00 - T max/min: -5/-7 
+codex [master●] % go run language/golang/weatherscan/scanner.go
+Time 23/12 2020:00 - T max/min: 15/-7 
+%!(EXTRA string=-8)Time 23/12 2020:00 - T max/min: 21/-8 
+%!(EXTRA string=-9)Time 24/12 2020:00 - T max/min: 03/-7 
+%!(EXTRA string=-8)Time 24/12 2020:00 - T max/min: 09/-5 
+%!(EXTRA string=-7)%                                                                                                                   
+codex [master●] % go run language/golang/weatherscan/scanner.go
+Time 23/12/2020 15:00 - T max/min: -7/-8 
+Time 23/12/2020 21:00 - T max/min: -8/-9 
+Time 24/12/2020 03:00 - T max/min: -7/-8 
+Time 24/12/2020 09:00 - T max/min: -5/-7 
+codex [master●] % 
+-----
+
