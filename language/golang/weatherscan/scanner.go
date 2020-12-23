@@ -6,6 +6,7 @@ package main
 
 import (
 	"encoding/xml"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -76,7 +77,7 @@ func main() {
 	// https://golang.org/pkg/net/http/#Response
 	// doc: https://www.meteoservice.ru/content/export
 	response, err := http.Get(
-		"https://www.meteoservice.ru/exportgismeteo?point=7421")
+		"https://www.meteoservice.ru/export/gismeteo?point=7421")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -93,5 +94,10 @@ func main() {
 	err = xml.Unmarshal(byteValue, &weather)
 	if err != nil {
 		log.Fatal(err)
+	}
+
+	forecast := weather.REPORT.TOWN.FORECAST
+	for i := 0; i < len(forecast); i++ {
+		fmt.Printf("Time %s/%s/%s %s:00 - T max/min: %s/%s \n", forecast[i].Day, forecast[i].Month, forecast[i].Year, forecast[i].Hour, forecast[i].TEMPERATURE.Max, forecast[i].TEMPERATURE.Min)
 	}
 }

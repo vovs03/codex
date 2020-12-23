@@ -10,8 +10,8 @@
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <MMWEATHER>
-	<REPORT type="frc3">
-		<TOWN index="7421" sname="%D0%9F%D1%80%D0%BE%D1%82%D0%B2%D0%B8%D0%BD%D0%BE%2C+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.%2C+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" latitude="55" longitude="37">
+<REPORT type="frc3">
+  <TOWN index="7421" sname="%D0%9F%D1%80%D0%BE%D1%82%D0%B2%D0%B8%D0%BD%D0%BE%2C+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.%2C+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" latitude="55" longitude="37">
                     			<FORECAST day="23" month="12" year="2020" hour="15" tod="2" predict="0" weekday="4">
 				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
 				<PRESSURE max="767" min="764"/>
@@ -33,7 +33,7 @@
                         			<FORECAST day="24" month="12" year="2020" hour="03" tod="0" predict="0" weekday="5">
 				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
 				<PRESSURE max="764" min="763"/>
-				<TEMPERATURE max="-7" min="-8"/>
+    <TEMPERATURE max="-7" min="-8"/>
 				<WIND min="6" max="7" direction="5"/>
 				<RELWET max="89" min="87"/>
 
@@ -42,8 +42,8 @@
                         			<FORECAST day="24" month="12" year="2020" hour="09" tod="1" predict="0" weekday="5">
 				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
 				<PRESSURE max="763" min="762"/>
-				<TEMPERATURE max="-5" min="-7"/>
-				<WIND min="6" max="7" direction="5"/>
+    <TEMPERATURE max="-5" min="-7"/>
+    <WIND min="6" max="7" direction="5"/>
 				<RELWET max="90" min="89"/>
 
 				<HEAT min="-14" max="-14"/>
@@ -116,3 +116,6 @@ type WEATHER struct {
 	} `xml:"REPORT"`
 } 
 ```
+
+- Set array into var `forecast`
+  - `forecast := weather.REPORT.TOWN.FORECAST`
