@@ -1,0 +1,4 @@
+os: 
+  - osx
+  - linux
+language: go
