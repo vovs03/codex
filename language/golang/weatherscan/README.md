@@ -117,5 +117,23 @@ type WEATHER struct {
 } 
 ```
 
+## Step :three: Array forecast[6] | cycle | log-file
+
 - Set array into var `forecast`
   - `forecast := weather.REPORT.TOWN.FORECAST`
+- Set cycle for data[items]
+
+Result:
+
+```terminal
+Time 23/12/2020 15:00 - T max/min: -7/-8 
+Time 23/12/2020 21:00 - T max/min: -8/-9 
+Time 24/12/2020 03:00 - T max/min: -7/-8 
+Time 24/12/2020 09:00 - T max/min: -5/-7 
+```
+
+## Step 4 Add: net/url for decoding TOWN-name
+
+- `import "net/url"`
+- var `town`
+- convert `url` to `UTF-8`

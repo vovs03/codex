@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"net/url"
 )
 
 // WEATHER https://www.onlinetool.io/xmltogo/
@@ -96,6 +97,11 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// https://golang.org/pkg/net/url/#PathUnescape
+	town, err := url.PathUnescape(weather.REPORT.TOWN.Sname)
+	fmt.Println("Город: ", town)
+
+	// Output 6 args for Date | Time | Temperature
 	forecast := weather.REPORT.TOWN.FORECAST
 	for i := 0; i < len(forecast); i++ {
 		fmt.Printf("Time %s/%s/%s %s:00 - T max/min: %s/%s \n", forecast[i].Day, forecast[i].Month, forecast[i].Year, forecast[i].Hour, forecast[i].TEMPERATURE.Max, forecast[i].TEMPERATURE.Min)
