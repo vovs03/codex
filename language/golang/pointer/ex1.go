@@ -19,8 +19,6 @@ func main() {
 
 // rotate 2 digits into 2 variables
 func swap(x, y *float64) {
-	var z = *x //2.25
-	*x = *y    //5.0
-	*y = z
-
+	// swap without 3rd variable | z - deleted
+	*x, *y = *y, *x
 }
