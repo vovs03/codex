@@ -49,8 +49,8 @@ Ok, let's starting.
 
 #### Ruby-lang
 
-[ruby-lang.org](https://www.ruby-lang.org) (Official web-site)
-  - :ru: [on Russian](https://www.ruby-lang.org/ru/)
+- [ruby-lang.org](https://www.ruby-lang.org) (Official web-site)
+- :ru: [on Russian](https://www.ruby-lang.org/ru/)
 
 ### Solutions for Ruby
 
