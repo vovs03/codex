@@ -6,10 +6,28 @@
 
 Вот другие примеры ситуаций:
 
-+1, +1, +1 дает 3
-+1, +1, -2 дает 0
--1, -2, -3 приводит к -6
+- `+1, +1, +1 дает 3`
+- `+1, +1, -2 дает 0`
+- `-1, -2, -3 приводит к -6`
 
 Начиная с нулевой частоты, какова результирующая частота после применения всех изменений частоты?
 
 [Загрузить данные](https://examiner-sft.herokuapp.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--293f457b26fe77cbd8d19e727d22ff0d3b7d2fab/01.txt)
+
+---
+
+## Result
+
+```ruby
+#!/usr/bin/env ruby
+
+arr = []
+
+File.open('01.txt') do |file|
+  while line = file.gets
+    arr = arr.push(line.to_i)
+  end
+end
+
+puts arr.sum
+```
