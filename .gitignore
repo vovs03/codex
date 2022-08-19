@@ -6,3 +6,5 @@
 
 # Source gobook
 language/golang/gobook/sourcecode
+
+tmp/
