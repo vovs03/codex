@@ -1,9 +1,6 @@
-numbers = [1,2,3,5]
+numbers = [1,2,3,4]
 
 def square_sum(numbers):
-  sx = []
-  for i in numbers:
-    sx.append(i*i)
-  print(sum(sx))
+  return sum(x * x for x in numbers)
   
-square_sum(numbers)
+print(square_sum(numbers))
