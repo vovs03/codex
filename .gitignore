@@ -6,3 +6,8 @@
 
 # Source gobook
 language/golang/gobook/sourcecode
+
+# 2023-04-04 09:26
+*.out
+*.h.gch
+
