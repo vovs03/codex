@@ -1,6 +1,5 @@
-# Create array from stdin(gets two nums)
-arr = (gets.to_i..gets.to_i).to_a
+# OSX Ventura13.2.1 ~/Projects/codex/language/ruby/ex/stepik/3_10_10
 
-#выборка по чётности числа и вставка пробела
-# Use this case: https://stackoverflow.com/questions/33284487/print-only-even-numbers-from-an-array
-puts arr.select(&:even?).join(" ")
+# Выборка по чётности числа и вставка пробела
+#  Use this case: https://stackoverflow.com/questions/33284487/print-only-even-numbers-from-an-array
+puts (gets.chomp.to_i..gets.chomp.to_i).select(&:even?).join(' ')
