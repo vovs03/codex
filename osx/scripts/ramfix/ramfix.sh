@@ -51,4 +51,8 @@ echo "RAM was cleaned"
 echo ""
 launchctl list | grep adobe
 
+launchctl stop com.adobe.accmac.36104
+launchctl stop com.adobe.CCXProcess.36496
+
+
 #echo "${adobe_process[@]}"
