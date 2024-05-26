@@ -17,13 +17,13 @@
 
 <!-- /TOC -->
 
-## 1.1. First Quastion
+## 1.1. First Question
 
 > - "I want to coding on some programming languages. Is it possible?"
 
 ## 1.2. First Answer
 
-> "- Yes, of cource.  
+> "- Yes, of cource.
 > But you need more practize!"
 
 Ok, let's starting.
@@ -37,7 +37,7 @@ Ok, let's starting.
 ### 1.3.1. Stack
 
 - [x] **OS**
-  - [ ] MacOs
+  - [ ] MacOS
   - [x] Linux Mint 18.3 (or another)
 - [x] :gem: [**Ruby**](#ruby-lang)
   - [x] `ruby --version` `ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]`
