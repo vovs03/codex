@@ -1,10 +1,1 @@
-.idea
-.DS_Store
-
-# 2021-11-28 stepik/22packages - was opened files
-*.swp
-
-# Source gobook
-language/golang/gobook/sourcecode
-
 tmp/
