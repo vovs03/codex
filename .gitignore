@@ -1,13 +1,1 @@
-# 2024-05-26
-*.class
-
-# 2021-11-28 stepik/22packages - was opened files
-*.swp
-
-# Source gobook
-language/golang/gobook/sourcecode
-
-# 2023-04-04 09:26
-*.out
-*.h.gch
-
+tmp/
