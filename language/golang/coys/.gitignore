@@ -1,0 +1,7 @@
+.vscode
+.idea
+tmp/**
+*.log
+
+# For tracers/compiles
+*.out
