@@ -5,7 +5,7 @@
 <!-- TOC -->
 
 - [1. Codex - this is examples of code for beginners](#1-codex---this-is-examples-of-code-for-beginners)
-  - [1.1. First Quastion](#11-first-quastion)
+  - [1.1. First Question](#11-first-question)
   - [1.2. First Answer](#12-first-answer)
   - [1.3. For Ruby on Rails developer](#13-for-ruby-on-rails-developer)
     - [1.3.1. Stack](#131-stack)
@@ -14,6 +14,7 @@
   - [1.4. For junior Android developers](#14-for-junior-android-developers)
     - [1.4.1. Languages](#141-languages)
     - [1.4.2. :dart: Java solutions](#142-dart-java-solutions)
+  - [Use `Makefele` for automation](#use-makefele-for-automation)
 
 <!-- /TOC -->
 
@@ -64,4 +65,8 @@ Ok, let's starting.
 
 ### 1.4.2. :dart: Java solutions
 
-Solutions [see here](../language/java/) // Need edit link for repository
+Solutions [see here](https://github.com/vovs03/codex/tree/master/language/java) // Need edit link for repository
+
+## 🦄 Use `Makefile` for automation
+
+- `@mk cl` Clear all `*.class`-files with recursion.
