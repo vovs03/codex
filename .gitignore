@@ -17,3 +17,37 @@ log.txt
 language/golang/gobook/sourcecode
 
 tmp/
+
+
+#!2-24-06-07 17:42 Fr
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Kotlin ###
+# https://ru.stackoverflow.com/questions/1083944/Запуск-kotlin-кода-без-ide
+META-INF
+*.jar
