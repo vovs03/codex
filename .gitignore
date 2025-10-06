@@ -9,6 +9,7 @@ log.txt
 # 2023-04-04 09:26
 *.out
 *.h.gch
+*.out.dSYM/Contents
 
 # 2021-11-28 stepik/22packages - was opened files
 *.swp

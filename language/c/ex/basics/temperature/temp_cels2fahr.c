@@ -5,7 +5,7 @@
    для celsius = -60, -50, ..., 110;
  * Вариант с плавающей точкой   */
 
-main() {
+int main() {
 	float fahr, celsius;
 	int lower, upper, step;
 
@@ -22,4 +22,3 @@ main() {
 		celsius = celsius + step;
 	}
 }
-
